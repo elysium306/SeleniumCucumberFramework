@@ -1,0 +1,117 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-19T16:38:56.252Z",
+        "line": 5,
+        "name": "Login Valid test",
+        "description": "",
+        "id": "sauce-demo-login-tests;login-valid-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1273433000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the login page",
+            "match": {
+              "location": "step_definitions.SauceDemoLogin.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 134666000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 46
+                }
+              ],
+              "location": "step_definitions.SauceDemoLogin.i_enter_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63774000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the login button",
+            "match": {
+              "location": "step_definitions.SauceDemoLogin.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135421000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be in the home page",
+            "match": {
+              "location": "step_definitions.SauceDemoLogin.i_should_be_in_the_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13901000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "There should be 6 items in the home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 16
+                }
+              ],
+              "location": "step_definitions.SauceDemoLogin.there_should_be_items_in_the_home_page(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@SauceValidLogin"
+          }
+        ]
+      }
+    ],
+    "name": "Sauce Demo login tests",
+    "description": "",
+    "id": "sauce-demo-login-tests",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SauceDemo.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
