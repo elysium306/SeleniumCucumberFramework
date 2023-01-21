@@ -1,5 +1,6 @@
 Feature: Login Application Feature
 
+  @LoginTest
   Scenario: User Login Scenario
     Given User is on the application Home Page
     When Application Page title is FREE CRM

@@ -1,5 +1,7 @@
 package utilities;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -36,12 +38,12 @@ public class BrowserUtils {
 	}
 	
 	public void waitUntilAlertIsPresent() {
-		letswait = new WebDriverWait(Driver.getDriver(), 10);
+		letswait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 		letswait.until(ExpectedConditions.alertIsPresent());
 	}
 	
 	public void waitUntilElementVisible(WebElement element) {
-		letswait = new WebDriverWait(Driver.getDriver(), 10);
+		letswait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 		letswait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
